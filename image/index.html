@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca91f8aad0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div class="containermain">
+    <div id="header">
+     <h1>Ajeeth.</h1>
+     <br>
+     
+     <hr>
+     <img class=img src="profile.png">
+     <nav>
+         <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+         </ul>
+         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+     </nav>
+    </div>
+    
+    <br>
+    <div class="content">
+        <h2 class="position">Web Developer</h2>
+          <h1>Hi,I'm Ajeeth</h1>
+          <br> 
+          <h1>From India</h1>
+    </div>
+    <br>
+    <br>
+
+    <!-------------------About--------------------- -->
+<div id="about">
+    <div class="cotainer">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="photo1.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class=subtitle>About Me</h1>
+                <br>
+                <p class="name">Hello,This is Ajeeth.A and I'm currently looking for opportunities in the field of web development with a focus on developing awesome websites.I've obtained knowledge on various technologies and practising more on that to improve my skills/exposure to reach my goal.  </p>
+                
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <br>
+                <div class="tab-content active-tab "id="skills">
+                  <ul>
+                      <li><span>Web development</span><br><br> Web app development using HTML,Css,JavaScript,Php and MySql.</li>
+                  </ul>
+                 </div>
+                 <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>Fresher</span> </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>2019</span> &emsp;  B.E Mechanical with 74%.</li>
+                        <br>
+                        
+                        <li><span>2015</span> &emsp; HSC/12th with 84%.</li>
+                        <br>
+                        
+                        <li><span>2013</span> &emsp; SSLC/10th with 90.4%.</li>
+                    </ul>
+                   </div>
+             </div>
+        </div>
+    </div>
+</div>
+ 
+
+<!------------------------My services--------------------------------->
+<div id="Services">
+    
+        <h2 class="subtitle1" >My Services</h2>
+        <div class="serviceslist1">
+             <div class="serviceslist ">
+                <i class="fa-solid fa-code"></i>
+                <h2 class="list">Front-End-Development</h2>
+                <p class="list1">Create an efficient design and layout for websites using html,css,JavaScript.</p>
+             </div>
+
+             <div class="serviceslist" >
+                <i class="fa-solid fa-code"></i>
+                <h2 class="list">Back-End-Development</h2>
+                <p class="list1">Write an efficient code for server-side web application and access database using Php and MySQL.</p>
+             </div>
+         
+        </div>
+
+</div>
+
+<!-----------------------------Portfolio------------------------------------->
+
+<div id="portfolio">
+    <h2 class=subtitle2 >My Work</h2>
+    <div class="worklist">
+        <div class="work">
+            <img src="work1.jpg">
+            <div class="layer">
+               <h3> Portfolio Site</h3>
+               <p>The web app contains my personal information.</p>
+               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="work2.jpg">
+            <div class="layer">
+                <h3> Food Ordering Website</h3>
+                <p>The web app connect you to order the food online.</p>
+                <a href="#" class="arrow2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <!--<div class="work">
+            <img src="work3.jpg">
+            <div class="layer">
+                <h3> Portfolio Site</h3>
+                <p>The web app contains my personal information about me.</p>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+<!--------------------------------Contact-------------------------------->
+ <div id="contact">
+    <div class="row">
+        <div class="contactleft">
+            <h2 class=subtitle3 >Contact</h2>
+            <i class="fa-solid fa-paper-plane"></i>
+            <p class="r1">ajithaji357@gmail.com</p>
+            <i class="fa-solid fa-square-phone"></i>
+            <p class="r2">8903693792</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <br>
+            <br>
+            <a href="A.AJEETH 3.pdf" download class="btn">Download Cv</a>
+        </div>
+        <div class="contactright">
+            <form action="contact.php" method="POST">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" name="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+ <div>
+    <div class="copyright">
+        <p>copyright &copy; 2022 by Ajeeth</p>
+    </div>
+ </div>
+ </div>   
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+         for(tablink of tablinks){
+             tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+    }
+         
+</script>
+<script>
+    var sidemen= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemen.style.left="224px";
+    }
+    function closemenu(){
+        sidemen.style.left="-224px";
+    }
+</script>
+</body>
+</html>
